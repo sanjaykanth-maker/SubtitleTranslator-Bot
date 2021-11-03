@@ -72,7 +72,7 @@ def abouts(client, message):
         text=about,
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Give Feedback", url="t.me/agentnova")]]
+            [[InlineKeyboardButton("Give Feedback", url="t.me/Tele_united_bots")]]
         ),
     )
 
@@ -127,7 +127,7 @@ def data(client, callback_query):
             text=about,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Give Feedback", url="t.me/agentnova")]]
+                [[InlineKeyboardButton("Give Feedback", url="t.me/Tele_united_bots")]]
             ),
         )
     elif rslt == "close":
@@ -231,7 +231,7 @@ def data(client, callback_query):
                 tr.delete()
                 if os.path.exists(outfile):
                     message.reply_document(
-                        document=outfile, thumb="logo.jpg", quote=True, caption=caption
+                        document=outfile, thumb="img.jpg", quote=True, caption=caption
                     )
                     update(message.chat.id, counts, "free")
                     insertlog()
